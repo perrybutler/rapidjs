@@ -1,7 +1,7 @@
 rapid.js
 ========
 
-Rapid.js is a Javascript templating engine designed for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library supports the transition over to a pure Javascript framework that can be utilized in any solution, not just WordPress.
+Rapid.js is a Javascript templating engine designed for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library will aid in the transition over to a pure Javascript architecture that can be utilized in any solution - not just WordPress - while still providing all of the same benefits and opening up the possibility for greater things.
 
 #How It Works#
 
