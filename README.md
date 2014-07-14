@@ -98,7 +98,12 @@ Before planning the Rapid.js architecture, an extensive review was conducted on 
 
 We also conducted a review of emerging and future techniques such as: template element, custom elements, web components, Shadow DOM, AMD, Common.js, Require.js, etc.
 
-Performance is always a trade-off that is mostly dependant upon what processing happens at the server and what processing happens at the client. This is where most templating engines differ. In the case of Rapid.js, the client will request JSON data from the server, then format and render this data however it sees fit without help from the server for presentation. However, this also means heavy processing at the client. The reverse method would likely create heavier load on the server. It's easy to simply throw more hardware at a server to increase performance since you can't do the same for every client, but this creates a scaling problem at the server end. And client processing is likely to get a whole lot faster in the next few years.
+Performance is always a trade-off that is mostly dependant upon what processing happens at the server and what processing happens at the client. It comes down to a choice between:
+
+1. Download less data from the server (pre-formatted JSON) and convert this data to HTML at the client then push it into the DOM.
+2. Download more data from the server (pre-rendered HTML) and push this data into the DOM at the client.
+
+This is where most templating engines differ the most. In the case of Rapid.js, the client will request JSON data from the server, then format and render this data however it sees fit without help from the server for presentation. However, this also means heavy processing at the client. The reverse method would create heavier load on the server and require more bandwidth. It's easy to simply throw more hardware at a server to increase performance since you can't do the same for every client, but this creates a scaling problem at the server. And client processing is likely to get a whole lot faster in the next few years.
 
 A benchmark of client vs. server templating can be found [here](http://ryanflorence.com/2012/client-v-server-templating/). The pros and cons of client vs. server templating can be found [here](http://openmymind.net/2012/5/30/Client-Side-vs-Server-Side-Rendering/). For what it's worth, we have implemented all of these methods in past projects, including the optimized versions mentioned in the article, providing us with insight into the various flavors of templating engines.
 
