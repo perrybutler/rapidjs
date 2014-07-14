@@ -90,7 +90,7 @@ or:
 
 Nested components/shortcodes will be achieved through a custom parser.
 
-#OMG, ANOTHER Javascript templating engine?#
+#OMG, Another Templating Engine?#
 
 Yes.
 
