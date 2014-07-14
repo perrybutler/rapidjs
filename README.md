@@ -83,3 +83,5 @@ or:
 
         [/grid]
     [/grid]
+
+Nested components/shortcodes will be achieved through a custom parser.
