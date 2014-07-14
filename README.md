@@ -94,7 +94,7 @@ Nested components/shortcodes will be achieved through a custom parser.
 
 Yes.
 
-Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs. This review included (but was not limited to): PHP, Smarty, EJS, Django, Angular.js (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js, React.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, Markup.js, Underscore, Ember.js, doT.js.
+Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs. This review included (but was not limited to): PHP, Smarty, EJS, Django, Angular.js (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js, React.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote, Markup.js, Underscore, Ember.js, doT.js.
 
 We also conducted a review of emerging and future techniques such as: template element, custom elements, web components, Shadow DOM, AMD, Common.js, Require.js, etc.
 
