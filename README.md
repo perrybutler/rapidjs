@@ -9,11 +9,11 @@ A templating engine is essentially a pre-hypertext processor that usually operat
 
 Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs. This review included (but was not limited to): PHP, Smarty, EJS, Django, Angular.js (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js, React.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, Markup.js, Underscore, Ember.js, doT.js.
 
-We also conducted a review of emerging and future techniques such as: <template>, Shadow DOM, AMD, Common.js, Require.js, etc.
+We also conducted a review of emerging and future techniques such as: template element, custom elements, web components, Shadow DOM, AMD, Common.js, Require.js, etc.
 
 Performance is always a trade-off that is mostly dependant upon what processing happens at the server and what processing happens at the client. This is where most templating engines differ. In the case of Rapid.js, the client will request JSON data from the server, then format and render this data however it sees fit without help from the server for presentation. However, this also means heavy processing at the client. The reverse method would likely create heavier load on the server.
 
-With the rise of single page apps (SPA), we're finding more and more reasons to let the client be the ultimate determining factor in how a data set will be displayed, and in what format. This means the data source (server) is completely completely decoupled from the client logic, or at least agnostic to it, meaning several apps could implement the same data in different ways.
+With the rise of single page apps (SPA), we're finding more and more reasons to let the client be the ultimate determining factor in how a data set will be displayed, and in what format. This means the data source (server) is  completely decoupled from the client logic, or at least agnostic to it, meaning several apps could implement the same data in different ways.
 
 #How It Works#
 
