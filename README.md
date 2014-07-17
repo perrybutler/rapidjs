@@ -5,7 +5,7 @@ Write Once, Run Anywhere.
 
 Rapid.js is a Javascript templating engine designed for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library will aid in the transition over to a pure Javascript architecture that can be utilized in any solution - not just WordPress - while still providing all of the same benefits as well as opening up the possibility for greater things.
 
-Our goal is to shrink the development workflow as much as possible without sacrificing functionality, or introducing custom syntax, overzealous patterns and extra steps into the process. Too many frameworks trash the working spec or hack around it, favoring convenience (laziness) over intuitiveness. Other frameworks will eat your soul for breakfast before giving you what you want.
+Our goal is to **shrink the development workflow** as much as possible **without sacrificing functionality**, or introducing custom syntax, overzealous patterns and extra steps into the process. Too many frameworks trash the working spec or hack around it, favoring convenience (laziness) over intuitiveness. Other frameworks will eat your soul for breakfast before giving you what you want.
 
 A templating engine is essentially a pre-hypertext processor that usually operates at the client, much like how PHP works at the server. Some engines are highly ambitious, but let us not forget that they are essentially doing what PHP does: pre-processing html before it is rendered by the browser. Rapid.js does not have an identity crisis in that respect.
 
