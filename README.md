@@ -1,4 +1,4 @@
-rapid.js
+Rapid.js
 ========
 
 Write Once, Run Anywhere.
