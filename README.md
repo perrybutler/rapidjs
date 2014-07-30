@@ -104,6 +104,7 @@ Performance is always a trade-off that is mostly dependant upon what processing 
 
 1. Download less data from the server (pre-formatted JSON) and convert this data to HTML at the client then push it into the DOM.
 2. Download more data from the server (pre-rendered HTML) and push this data into the DOM at the client.
+3. Download potentially less data from the server (pre-compiled Javascript templating functions with baked in data/behavior) and utilize the functions at the client which builds and pushes DOM elements into the DOM. This seems to divide the work load better than 1 or 2.
 
 This is where the various templating engines differ the most. In the case of Rapid.js, the client will request JSON data from the server, then format and render this data however it sees fit without help from the server for presentation. However, this also means heavy processing at the client. The reverse method would create heavier load on the server and require more bandwidth. It's easy to simply throw more hardware at a server to increase performance since you can't do the same for every client, but this creates a scaling problem at the server. And client processing is likely to get a whole lot faster in the next few years, whereas server bandwidth (millions of users) will continue to be a limiting factor.
 
