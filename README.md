@@ -3,7 +3,7 @@ Rapid.js
 
 Write Once, Run Anywhere.
 
-Rapid.js is a Javascript templating engine designed for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library will aid in the transition over to a pure Javascript architecture that can be utilized in any solution - not just WordPress - while still providing all of the same benefits as well as opening up the possibility for greater things.
+Rapid.js is a Javascript framework in development for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library will aid in the transition over to a pure Javascript architecture that can be utilized in any solution - not just WordPress - while still providing all of the same benefits as well as opening up the possibility for greater things.
 
 Our goal is to **shrink the development workflow** as much as possible **without sacrificing functionality**, or introducing custom syntax, overzealous patterns and extra steps into the process. Too many frameworks trash the working spec or hack around it, favoring convenience (laziness) over intuitiveness. Other frameworks will eat your soul for breakfast before giving you what you want.
 
@@ -96,9 +96,9 @@ Nested components/shortcodes will be achieved through a custom parser.
 
 Yes.
 
-Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs. This review included (but was not limited to): Meteor, PHP, Smarty, EJS, Django, Angular.js (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook), Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote, Markup.js, Underscore, Ember.js, doT.js, soma-template.
+Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs. This review included (but was not limited to): Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, Angular.js (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook), Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template.
 
-We also conducted a review of emerging and future techniques such as: Object.observe(), template element, custom elements, web components, websockets, Shadow DOM, AMD, Common.js, Require.js, etc.
+We also conducted a review of emerging and future techniques such as: Object.observe(), template element, Custom Elements, Web Components, WebSockets, Comet (long polling/SSE), 3-Way Binding, Shadow DOM, AMD, Common.js, Require.js, etc.
 
 Performance is always a trade-off that is mostly dependant upon what processing happens at the server and what processing happens at the client. It comes down to a choice between:
 
