@@ -1,9 +1,7 @@
 Rapid.js
 ========
 
-<div style="float:right;">
-<img src="http://glassocean.net/media/rapidjs.jpg" alt="rapid.js" title="Rapid.js"/>
-</div>
+<img align="right" src="http://glassocean.net/media/rapidjs.jpg" alt="rapid.js" title="Rapid.js"/>
 
 Write Once, Run Anywhere.
 
