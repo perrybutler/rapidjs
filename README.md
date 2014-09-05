@@ -1,7 +1,6 @@
+<img align="right" src="http://glassocean.net/media/rapidjs.jpg" alt="rapid.js" title="Rapid.js"/>
 Rapid.js
 ========
-
-<img align="right" src="http://glassocean.net/media/rapidjs.jpg" alt="rapid.js" title="Rapid.js"/>
 
 Write Once, Run Anywhere.
 
