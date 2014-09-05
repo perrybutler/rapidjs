@@ -1,8 +1,9 @@
-<img align="right" src="http://glassocean.net/media/rapidjs.jpg" alt="rapid.js" title="Rapid.js"/>
 Rapid.js
 ========
 
 Write Once, Run Anywhere.
+
+![rapid.js](http://glassocean.net/media/rapidjs.jpg)
 
 Rapid.js is a Javascript framework in development for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library will aid in the transition over to a pure Javascript architecture that can be utilized in any solution - not just WordPress - while still providing all of the same benefits as well as opening up the possibility for greater things.
 
