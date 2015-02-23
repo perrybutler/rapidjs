@@ -13,6 +13,8 @@ Future ambitions include providing the features and components necessary to depl
 
 #How It Works#
 
+Note: This prototype is from an early test run. Many details have changed over time and this section could use an update.
+
 **Data:**
 
     <Games>
@@ -100,17 +102,7 @@ Yes.
 
 Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs surrounding templating and data binding: Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, Angular.js (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js.
 
-I've also reviewed some of the emerging and future techniques such as: Object.observe(), template element, Custom Elements, Web Components, WebSockets, Comet (long polling/SSE), 3-Way Binding, Shadow DOM, AMD, Common.js, Require.js, etc.
-
-Performance is always a trade-off that is mostly dependant upon what processing happens at the server and what processing happens at the client. It comes down to a choice between:
-
-1. Download less data from the server (pre-formatted JSON) and convert this data to HTML at the client then push it into the DOM.
-2. Download more data from the server (pre-rendered HTML) and push this data into the DOM at the client.
-3. Download potentially less data from the server (pre-compiled Javascript templating functions with baked in data/behavior) and utilize the functions at the client which builds and pushes DOM elements into the DOM. This seems to divide the work load better than 1 or 2.
-
-This is where the various templating engines differ the most. In the case of Rapid.js, the client will request JSON data from the server, then format and render this data however it sees fit without help from the server for presentation. However, this also means heavy processing at the client. The reverse method would create heavier load on the server and require more bandwidth. It's easy to simply throw more hardware at a server to increase performance since you can't do the same for every client, but this creates a scaling problem at the server. And client processing is likely to get a whole lot faster in the next few years, whereas server bandwidth (lots of users) will continue to be a limiting factor.
-
-A good look at the present state of client/server applications, and where the future is headed, can be found [here](https://blog.engineyard.com/2014/the-client-server-see-saw). A benchmark of client vs. server templating can be found [here](http://ryanflorence.com/2012/client-v-server-templating/). The pros and cons of client vs. server templating can be found [here](http://openmymind.net/2012/5/30/Client-Side-vs-Server-Side-Rendering/) and [here](http://www.forbes.com/sites/quora/2014/07/14/what-is-the-most-valuable-programming-language-to-know-for-the-future-and-why/). For what it's worth, we have implemented all of these methods in past projects, including the optimized versions mentioned in the articles, providing us with insight into the various flavors of templating engines.
+I've also reviewed some of the emerging and future techniques such as: mediator pattern, MVVM, MVC, MVP, contenteditable,  Object.observe(), template element, Custom Elements, Web Components, WebSockets, Comet (long polling/SSE), 3-Way Binding, Shadow DOM, AMD, Common.js, Require.js, etc.
 
 Anyhow, with the rise of single page apps (SPA), we're finding more and more reasons to let the client be the ultimate determining factor in how a data set will be displayed, and in what format. This means the data source (server) is  completely decoupled from the client logic, or at least agnostic to it, meaning several apps could implement the same data in different ways - your data becomes a clean API endpoint that can be consumed by other services/apps. We also want to give end-users full expressive power over building their own views and templates using a WYSIWYG editor and plugging in data however they see fit. The end-user can apply different views to existing data on-the-fly without having to request anything from the server.
 
