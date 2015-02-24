@@ -100,7 +100,7 @@ Nested components/shortcodes will be achieved through a custom parser.
 
 Yes.
 
-Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs surrounding templating and data binding: Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, AngularJS (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (Linked-In), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js, KnockoutJS, Vue.js, Mithril, Firebase. Tell me about framework fatigue!
+Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs surrounding templating and data binding: Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, AngularJS (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (LinkedIn, PayPal), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js, KnockoutJS, Vue.js, Mithril, Firebase. Tell me about framework fatigue!
 
 I've also reviewed modern, emerging and future techniques such as: mediator pattern, MVVM, MVC, MVP, contenteditable, localstorage, Object.observe(), template element, Custom Elements, Web Components, WebSockets, Comet (long polling/SSE), 3-Way Binding, Shadow DOM, AMD, Common.js, Require.js, CSS3D, WebGL, etc.
 
