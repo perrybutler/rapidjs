@@ -100,9 +100,19 @@ Nested components/shortcodes will be achieved through a custom parser.
 
 Yes.
 
-Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs surrounding templating and data binding related frameworks and platforms: *Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, AngularJS (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (LinkedIn, PayPal), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook, Instagram), Flux (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js, KnockoutJS, Vue.js, Mithril, Firebase, Thrift (Apache), Protobuf (Google), Cap'n Proto (ex-Google), Node.js, Express, Socket.io, SockJS, SailsJS, ThreeJS*. Framework fatigue is now!
+*Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs surrounding templating and data binding related frameworks and platforms:*
 
-I've also reviewed legacy, modern, emerging and future techniques/patterns such as: *mediator pattern, message queues, DCOM (Microsoft), RPC, CORBA, IOCP, ascii/binary serialization, REST, SOAP, CRUD, MVVM, MVC, MVP, OAuth, contenteditable, localstorage, remotestorage, object.observe(), template element, custom elements, web components, websockets, WebRTC, Comet (long polling/SSE), 3-Way Binding, Shadow DOM, AMD, Common.js, Require.js, CSS3D, WebGL, etc*.
+Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, AngularJS (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (LinkedIn, PayPal), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook, Instagram), Flux (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js, KnockoutJS, Vue.js, Mithril, Firebase, Thrift (Apache), Protobuf (Google), Cap'n Proto (ex-Google), Node.js, Express, Socket.io, SockJS, SailsJS, ThreeJS. Framework fatigue is now!
+
+*I've also reviewed legacy, modern, emerging and future techniques/patterns such as:*
+
+mediator pattern, message queues, DCOM (Microsoft), RPC, CORBA, IOCP, ascii/binary serialization, REST, SOAP, CRUD, MVVM, MVC, MVP, OAuth, contenteditable, localstorage, remotestorage, object.observe(), template element, custom elements, web components, websockets, WebRTC, Comet (long polling/SSE), 3-Way Binding, Shadow DOM, AMD, Common.js, Require.js, CSS3D, WebGL, etc.
+
+##The Endless Frontier
+
+Despite all of these options, technology is advancing so quickly that I'd say half of the frameworks listed above will become obsolete in the next 2 years if they haven't already. Regardless of hype words, we are on the cusp of "Web 3.0" where our desktop OS and apps make a full migration to the web; it's something I've been pushing for years through my research and developments with Nest and Rapid.js.
+
+In the near future we are also looking at separating apps from their data, which enables users to own their data and store it where they want. We will start hearing more about "serverless apps" and the "unhosted" movement, which means apps are not strongly coupled to a backend server or require no server at all, freeing developers from the goliath clutches of comparatively numerous SaaS providers. We will see apps using distributed and peer-to-peer technologies, incorporating truly portable widgets (web components) and data from numerous sources, without relying on a central server.
 
 ##On Single Page Apps
 
