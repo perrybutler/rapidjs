@@ -134,7 +134,7 @@ Yes.
 
 *Before planning the Rapid.js architecture, an extensive review was conducted on the current state of affairs surrounding templating and data binding related frameworks and platforms:*
 
-Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, AngularJS (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (LinkedIn, PayPal), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook, Instagram), Flux (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js, KnockoutJS, Vue.js, Mithril, Firebase, Thrift (Apache), Protobuf (Google), Cap'n Proto (ex-Google), Node.js, Express, Socket.io, SockJS, SailsJS, ThreeJS, Riot (Muut). Framework fatigue is now!
+Meteor, PHP, Ruby on Rails, Smarty, EJS, Django, AngularJS (Google), Backbone.js, Jade, Mustache.js, Handlebars.js, HTMLBars (Ember), Hogan.js (Twitter), Dust.js (LinkedIn, PayPal), Transparency.js, ICanHaz.js, Weld.js, Ractive.js (TheGuardian), React.js (Facebook, Instagram), Flux (Facebook), Swarm.js, Polymer (Google), Micro-Templates (Resig), jQuery Templates, jsRender, jQote2, Markup.js, Underscore, Ember.js, doT.js, soma-template, PURE.js, Cindy, Moulder, Rivets.js, KnockoutJS, Vue.js, Mithril, Firebase, Thrift (Apache), Protobuf (Google), Cap'n Proto (ex-Google), Node.js, Express, Socket.io, SockJS, SailsJS, ThreeJS, Riot (Muut), Sandstorm.io. Framework fatigue is now!
 
 *I've also reviewed legacy, modern, emerging and future techniques/patterns such as:*
 
@@ -154,4 +154,4 @@ We are quickly approaching a hybrid computing paradigm that lies between "thin c
 
 #History
 
-Much of the grandiose ideas herein are inspired by [NEST](http://glassocean.net/nest/) - a previous HTML5 project that will eventually be rewritten using the Rapid Platform - and [DotNetSockets](https://github.com/perrybutler/dotnetsockets), another previous project that allows client/server communication via serialization/marshaling of objects into binary packets, transmission of those packets over TCP/IP, and deserialization/unmarshaling of those packets into the original language-native objects at the receiving end, offering an asynchronous RPC/MOM framework.
+Much of the grandiose ideas herein are inspired by [NEST](http://glassocean.net/nest/) - a previous HTML5 project similar to a "personal cloud" which incorporates individual apps like an OS that will eventually be rewritten using the Rapid Platform - and [DotNetSockets](https://github.com/perrybutler/dotnetsockets), another previous project that allows client/server communication via serialization/marshaling of objects into binary packets, transmission of those packets over TCP/IP, and deserialization/unmarshaling of those packets into the original language-native objects at the receiving end, offering an asynchronous RPC/MOM framework.
