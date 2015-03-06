@@ -118,6 +118,38 @@ Challenges help us experiment with a goal in mind and determine the capabilities
 
 Each slide consists of a background image and three pieces of text that sit above the background - very typical for a Carousel widget. The twist is that when you view a page with the Carousel on it and you see it animating, you may edit the Carousel in its live form. Clicking into one of the text pieces (a contenteditable div) calls stop() automatically, which pauses the Carousel animation so the slide doesn't change while you are editing the text. When changes are made to the text (on input), the component automatically updates its internal data model (JSON) which contains the slide's data. Now, and next time that slide is displayed, the new value is shown. This DOM -> JSON synchronization happens immediately, but we'll likely want to buffer this so we aren't firing updates on every keystroke.
 
+Every Rapid.js component contains a data property. When the Carousel component is designed, we include some default data so the component can be rendered correctly on a page which the user can start working with:
+
+```
+me.data = {
+    "slides": [
+    {
+        "bg": "1.jpg",
+        "bgpos": "bottom_center",
+        "txt1": "",
+        "txt2": "Perry Butler",
+        "txt3": "Software Engineer + IT Manager"
+    },
+    {
+        "bg": "2.jpg",
+        "bgpos": "bottom_center",
+        "txt1": "Hello World",
+        "txt2": "This is Slide 2",
+        "txt3": "Subtitle goes here"
+    },
+    {
+        "bg": "3.jpg",
+        "bgpos": "top_left",
+        "txt1": "Third slide",
+        "txt2": "Custom text here",
+        "txt3": ""
+    }
+    ]
+}
+```
+
+![carousel](https://cloud.githubusercontent.com/assets/3649315/6537938/8a9e637c-c410-11e4-9d88-d4fd16b39f8e.jpg)
+
 We're not done yet. The next part is to build a Property List component which renders a data-bound list of key:value pairs representing a flat JSON structure. Most components have one or more properties, so having a universal way to view a collection of properties and edit them can be handled by this new Property List component. You can think of it like the Properties panel in Visual Studio - as you develop a custom control (component class) in Visual Studio, the class' public properties automatically show up in the Properties panel of the IDE, populated with values for the selected control instance.
 
 With the Carousel and Property List, the last component we need is a Lightbox. Basically, what we are trying to do is provide a popup window where you may edit the Carousel and its slides via a Property List, offering something like a settings dashboard for the component, except the Property List and Lightbox work together to create the whole thing dynamically.
@@ -125,8 +157,6 @@ With the Carousel and Property List, the last component we need is a Lightbox. B
 Finally, when the Lightbox appears and a Carousel property gets changed via the Property List, the Carousel data is updated immediately because the Property List has a reference to the Carousel and its JSON data. This works because we pass the Carousel instance (or just the data) to the Property List instance when we create it, and the Property List iterates the data, outputting the key:value pairs into the DOM using contenteditable divs, automatically data-binding those divs to the data so that input in the Property List directly modifies the Carousel data.
 
 The last step is to have the Carousel refresh itself on the page, so that a change via the Property List is immediately reflected in the DOM / live Carousel. This is where we start looking at 1-way binding, 2-way binding, and/or object.observe(). Still a work in progress.
-
-![carousel](https://cloud.githubusercontent.com/assets/3649315/6537938/8a9e637c-c410-11e4-9d88-d4fd16b39f8e.jpg)
 
 Some other things being experimented with include pushing the component's JSON into localStorage, allowing the component (and app) to survive a full page or browser reload. It also eases the burden of bad network connections and working offline, where changes to a data structure do not require an immediate round trip to a server for validation. In some way the DOM is like an etch-a-sketch, highly volatile and easily destructable, therefore the state of a component (or entire app) probably doesn't belong in the DOM. Mind you, AngularJS and Polymer are leaning ever more towards DOM == state, so this is just my opinion. I'm only wondering how they intend on serializing or maintaining an app and its state as it is mostly scattered throughout the DOM? By having an app's state centralized and available to us at any time, we can save/restore the app to that very state later, and snapshots of the app can be provided, possibly offering an undo mechanism.
 
