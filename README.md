@@ -112,6 +112,8 @@ Achieving the score was easy though. We include a bare minimum list template (on
 
 ## Challenges
 
+### Challenge 1 - Carousel
+
 Challenges help us experiment with a goal in mind and determine the capabilities of the prototype as it develops. While a TodoMVC example is on the list, the first challenge I've selected is to build a Carousel widget that rotates through a collection of slides, with an extra twist...
 
 Each slide consists of a background image and three pieces of text that sit above the background - very typical for a Carousel widget. The twist is that when you view a page with the Carousel on it and you see it animating, you may edit the Carousel in its live form. Clicking into one of the text pieces (a contenteditable div) calls stop() automatically, which pauses the Carousel animation so the slide doesn't change while you are editing the text. When changes are made to the text (on input), the component automatically updates its internal data model (JSON) which contains the slide's data. Now, and next time that slide is displayed, the new value is shown. This DOM -> JSON synchronization happens immediately, but we'll likely want to buffer this so we aren't firing updates on every keystroke.
@@ -123,6 +125,8 @@ With the Carousel and Property List, the last component we need is a Lightbox. B
 Finally, when the Lightbox appears and a Carousel property gets changed via the Property List, the Carousel data is updated immediately because the Property List has a reference to the Carousel and its JSON data. This works because we pass the Carousel instance (or just the data) to the Property List instance when we create it, and the Property List iterates the data, outputting the key:value pairs into the DOM using contenteditable divs, automatically data-binding those divs to the data so that input in the Property List directly modifies the Carousel data.
 
 The last step is to have the Carousel refresh itself on the page, so that a change via the Property List is immediately reflected in the DOM / live Carousel. This is where we start looking at 1-way binding, 2-way binding, and/or object.observe(). Still a work in progress.
+
+![carousel](https://cloud.githubusercontent.com/assets/3649315/6537938/8a9e637c-c410-11e4-9d88-d4fd16b39f8e.jpg)
 
 Some other things being experimented with include pushing the component's JSON into localStorage, allowing the component (and app) to survive a full page or browser reload. It also eases the burden of bad network connections and working offline, where changes to a data structure do not require an immediate round trip to a server for validation. In some way the DOM is like an etch-a-sketch, highly volatile and easily destructable, therefore the state of a component (or entire app) probably doesn't belong in the DOM. Mind you, AngularJS and Polymer are leaning ever more towards DOM == state, so this is just my opinion. I'm only wondering how they intend on serializing or maintaining an app and its state as it is mostly scattered throughout the DOM? By having an app's state centralized and available to us at any time, we can save/restore the app to that very state later, and snapshots of the app can be provided, possibly offering an undo mechanism.
 
@@ -139,6 +143,12 @@ You might think this is sounding more and more like the job of a CMS, but we mus
 [google-map lat="37.790" long="-122.390"]
 
 Both can be mixed in with other HTML to produce a final web page. Polymer pre-processes the component at the client-side, while WordPress pre-processes the shortcode at the server-side. Other than that, it's pretty much *the exact same idea*.
+
+### Challenge 2 - CMS
+
+This challenge is actually what sparked the development of Rapid.js and it incorporates the very first prototype. I've taken a step back from the Mist project to focus on a core framework that can support it - Rapid.js. I did capture a video of Mist's early functionality and features before shifting focus:
+
+[![Mist Alpha Preview](http://img.youtube.com/vi/bYpOtAr1WiI/0.jpg)](https://www.youtube.com/watch?v=bYpOtAr1WiI)
 
 ##OMG, Another Templating Engine?#
 
