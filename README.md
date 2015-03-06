@@ -128,7 +128,7 @@ Some other things being experimented with include pushing the component's JSON i
 
 What's the point of all this? Rapid.js is being prototyped to take web components to a new level of awesome, one which offers live WYSIWYG editing capabilities. It's like the utility of Visual Studio built into every component. Nothing is more liberating than being able to fine tune any aspect of your web site or app *in its live form*, without having to break out of your casual workflow, jump into your development environment, take a backup, make changes to the code, debug and commit, then roll out an update for the site/app. That's too much hokey pokey when all we wanted to do was hit "Switch to Edit mode" and change "this text is SO cool" to "this text isn't very cool". You might think this is sounding more and more like the job of a CMS, but remember that a CMS is loosely based on using templates (Pages, Posts, Galleries, etc) and widgets anyway. If you think about it, Web Components have a lot of "content management" opportunity baked in. They literally take the idea of WordPress templates and shortcodes one step further, in a web standards sort of way. Therefore, Web Components will likely spur big changes in the way we think about the CMS.
 
-#OMG, Another Templating Engine?#
+##OMG, Another Templating Engine?#
 
 Yes.
 
