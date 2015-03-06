@@ -120,7 +120,7 @@ We're not done yet. The next part is to build a Property List component which re
 
 With the Carousel and Property List, the last component we need is a Lightbox. Basically, what we are trying to do is provide a popup window where you may edit the Carousel and its slides via a Property List, offering something like a settings dashboard for the component, except the Property List and Lightbox work together to create the whole thing dynamically.
 
-Finally, when the Lightbox appears and a Carousel property gets changed via the Property List, the Carousel data is updated immediately because the Property List has a reference to the Carousel and its JSON data.
+Finally, when the Lightbox appears and a Carousel property gets changed via the Property List, the Carousel data is updated immediately because the Property List has a reference to the Carousel and its JSON data. This works because we pass the Carousel instance (or just the data) to the Property List instance when we create it, and the Property List iterates the data, outputting the key:value pairs into the DOM using contenteditable divs, automatically data-binding those divs to the data so that input in the Property List directly modifies the Carousel data.
 
 The last step is to have the Carousel refresh itself on the page, so that a change via the Property List is immediately reflected in the DOM / live Carousel. This is where we start looking at 1-way binding, 2-way binding, and/or object.observe(). Still a work in progress.
 
