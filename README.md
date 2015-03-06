@@ -130,14 +130,14 @@ What's the point of all this? Rapid.js is being prototyped to take web component
 
 You might think this is sounding more and more like the job of a CMS, but we must remember that a CMS is loosely based around using templates (Pages, Posts, Galleries, etc) and widgets anyway, and it's the same problem Javascript frameworks and Web Components set out to solve. If you think about it, Web Components have a lot of "content management" opportunity baked in. They literally take the idea of WordPress templates and shortcodes one step further, in a web standards sort of way. Therefore, Web Components will likely spur big changes in the way we think about the CMS. Compare the following *Polymer web component* and *WordPress shortcode*:
 
-***Polymer:***
-'''
-<google-map lat="37.790" long="-122.390"></google-map>
-'''
-***WordPress:***
-'''
+***Polymer Web Component:***
+
+&lt;google-map lat="37.790" long="-122.390"&gt;&lt;/google-map&gt;
+
+***WordPress Shortcode:***
+
 [google-map lat="37.790" long="-122.390"]
-'''
+
 Both can be mixed in with other HTML to produce a final web page. Polymer pre-processes the component at the client-side, while WordPress pre-processes the shortcode at the server-side. Other than that, it's pretty much *the exact same idea*.
 
 ##OMG, Another Templating Engine?#
