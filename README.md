@@ -96,6 +96,24 @@ or:
 
 Nested components/shortcodes will be achieved through a custom parser.
 
+## Benchmarks
+
+I came across a [benchmark](http://chrisharrington.github.io/demos/performance/) by Chris Harrington that compares React, Angular, Knockout and Raw DOM performance for rendering a list of 1000 items. Overall the results are no surprise, but what's interesting is the fact that Raw DOM is almost 5 times faster than any of these frameworks. Clearly, there's room for improvement. I'd like to see how other frameworks such as Mithril and Riot compare, but before that, I decided to see how an early Rapid.js prototype could perform.
+
+Here are the results:
+
+* Rapid.js 140ms
+* ReactJS 170ms
+* AngularJS 380ms
+
+Is this important? Not really, as Rapid.js is currently nothing more than a few experimental implementations of templating and data binding at the moment. You cannot build anything with it yet.
+
+Achieving the score was easy though. We include a bare minimum list template (one wrap element and one list item element) as an HTML template element in the page, or as an HTML string in the component itself. Either way, the template ends up in the component instance as a real DOM node in memory. From there, we iterate the dataset and clone the single list item element for each record in the dataset. jQuery was used, which does add further overhead to performance.
+
+## Challenges
+
+TODO
+
 #OMG, Another Templating Engine?#
 
 Yes.
