@@ -126,7 +126,19 @@ The last step is to have the Carousel refresh itself on the page, so that a chan
 
 Some other things being experimented with include pushing the component's JSON into localStorage, allowing the component (and app) to survive a full page or browser reload. It also eases the burden of bad network connections and working offline, where changes to a data structure do not require an immediate round trip to a server for validation. In some way the DOM is like an etch-a-sketch, highly volatile and easily destructable, therefore the state of a component (or entire app) probably doesn't belong in the DOM. Mind you, AngularJS and Polymer are leaning ever more towards DOM == state, so this is just my opinion. I'm only wondering how they intend on serializing or maintaining an app and its state as it is mostly scattered throughout the DOM? By having an app's state centralized and available to us at any time, we can save/restore the app to that very state later, and snapshots of the app can be provided, possibly offering an undo mechanism.
 
-What's the point of all this? Rapid.js is being prototyped to take web components to a new level of awesome, one which offers live WYSIWYG editing capabilities. It's like the utility of Visual Studio built into every component. Nothing is more liberating than being able to fine tune any aspect of your web site or app *in its live form*, without having to break out of your casual workflow, jump into your development environment, take a backup, make changes to the code, debug and commit, then roll out an update for the site/app. That's too much hokey pokey when all we wanted to do was hit "Switch to Edit mode" and change "this text is SO cool" to "this text isn't very cool". You might think this is sounding more and more like the job of a CMS, but remember that a CMS is loosely based on using templates (Pages, Posts, Galleries, etc) and widgets anyway. If you think about it, Web Components have a lot of "content management" opportunity baked in. They literally take the idea of WordPress templates and shortcodes one step further, in a web standards sort of way. Therefore, Web Components will likely spur big changes in the way we think about the CMS.
+What's the point of all this? Rapid.js is being prototyped to take web components to a new level of awesome, one which offers live WYSIWYG editing capabilities. It's like the utility of Visual Studio built into every component. Nothing is more liberating than being able to fine tune any aspect of your web site or app *in its live form*, without having to break out of your casual workflow, jump into your development environment, take a backup, make changes to the code, debug and commit, then roll out an update for the site/app. That's too much hokey pokey when all we wanted to do was hit "Switch to Edit mode" and change "this text is SO cool" to "this text isn't very cool".
+
+You might think this is sounding more and more like the job of a CMS, but we must remember that a CMS is loosely based around using templates (Pages, Posts, Galleries, etc) and widgets anyway, and it's the same problem Javascript frameworks and Web Components set out to solve. If you think about it, Web Components have a lot of "content management" opportunity baked in. They literally take the idea of WordPress templates and shortcodes one step further, in a web standards sort of way. Therefore, Web Components will likely spur big changes in the way we think about the CMS. Compare the following *Polymer web component* and *WordPress shortcode*:
+
+Polymer:
+
+<google-map lat="37.790" long="-122.390"></google-map>
+
+WordPress:
+
+[google-map lat="37.790" long="-122.390"]
+
+Both can be mixed in with other HTML to produce a final web page. Polymer pre-processes the component at the client-side, while WordPress pre-processes the shortcode at the server-side. Other than that, it's pretty much *the exact same idea*.
 
 ##OMG, Another Templating Engine?#
 
