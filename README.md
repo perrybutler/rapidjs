@@ -150,6 +150,8 @@ This challenge is actually what sparked the development of Rapid.js and it incor
 
 [![Mist Alpha Preview](http://img.youtube.com/vi/bYpOtAr1WiI/0.jpg)](https://www.youtube.com/watch?v=bYpOtAr1WiI)
 
+You'll notice how lightning fast everything is - switching between categories and sorting hundreds of media items occurs in a fraction of a second. The sort criteria are dyanmically populated based on what is available for that media category.
+
 ##OMG, Another Templating Engine?#
 
 Yes.
