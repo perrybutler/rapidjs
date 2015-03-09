@@ -186,6 +186,8 @@ These *component instances* get mixed in with other HTML to produce a final comp
 
 &lt;GoogleMap lat="37.790" long="-122.390"/&gt;
 
+As we can see, templated re-usable components and UI have been a "thing" for quite some time; most frameworks take a similar approach. [Relevant](http://en.wikipedia.org/wiki/User_interface_markup_language).
+
 ### Challenge 2 - CMS
 
 This challenge is actually what sparked the development of Rapid.js and it incorporates the very first prototype. I've taken a step back from the Mist project to focus on a core framework that can support it - Rapid.js. I did capture a video of Mist's early functionality and features before shifting focus:
