@@ -110,6 +110,8 @@ Is this important? Not really, as Rapid.js is currently nothing more than a few 
 
 Achieving the score was easy though. We include a bare minimum list template (one wrap element and one list item element) as an HTML template element in the page, or as an HTML string in the component itself. Either way, the template ends up in the component instance as a real DOM node in memory. From there, we iterate the dataset and clone the single list item element for each record in the dataset. jQuery was used, which does add further overhead to performance.
 
+In comparison, React's Virtual DOM can batch the cloning of these nodes in memory and push out all 1000 items as a single DOM update (or a few?), but even then, cloning the DOM node in a loop with jQuery was faster. I can only conclude that this limited scenario is not a good test of React's Virtual DOM. I'd like to try a few more tests, one where we just push the entire pre-rendered list (HTML string) into the DOM, and another where we batch the cloning of DOM nodes in memory and then push that whole collection into the DOM with a single call.
+
 ## Challenges
 
 ### Challenge 1 - Carousel
