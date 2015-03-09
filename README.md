@@ -178,7 +178,13 @@ You might think this is sounding more and more like the job of a CMS, but we mus
 
 &lt;GoogleMap lat="37.790" long="-122.390"/&gt;
 
-Both can be mixed in with other HTML to produce a final web page. Polymer pre-processes the component at the client-side, while WordPress pre-processes the shortcode at the server-side. Other than that, it's pretty much *the exact same idea*.
+These *component instances* get mixed in with other HTML to produce a final component or web page. Polymer and React pre-process the component at the client-side, while WordPress pre-processes the shortcode at the server-side. Other than that, it's pretty much *the exact same idea*.
+
+***Bonus - Mozilla XBL/XUL and Microsoft XAML:***
+
+&lt;google-map lat="37.790" long="-122.390"&gt;&lt;/google-map&gt;
+
+&lt;GoogleMap lat="37.790" long="-122.390"/&gt;
 
 ### Challenge 2 - CMS
 
