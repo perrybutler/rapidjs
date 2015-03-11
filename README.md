@@ -164,29 +164,21 @@ Some other things being experimented with include pushing the component's JSON i
 
 What's the point of all this? Rapid.js is being prototyped to take web components to a new level of awesome, one which offers live WYSIWYG editing capabilities. It's like the utility of Visual Studio built into every component. Nothing is more liberating than being able to fine tune any aspect of your web site or app *in its live form*, without having to break out of your casual workflow, jump into your development environment, take a backup, make changes to the code, debug and commit, then roll out an update for the site/app. That's too much hokey pokey when all we wanted to do was hit "Switch to Edit mode" and change "this text is SO cool" to "this text isn't very cool".
 
-You might think this is sounding more and more like the job of a CMS, but we must remember that a CMS is loosely based around using templates (Pages, Posts, Galleries, etc) and widgets anyway, and it's the same problem Javascript frameworks and Web Components set out to solve. If you think about it, Web Components have a lot of "content management" opportunity baked in. They literally take the idea of WordPress templates and shortcodes one step further, in a web standards sort of way. Therefore, Web Components will likely spur big changes in the way we think about the CMS. Compare the following *Polymer web component*, *WordPress shortcode* and *React Component*:
+You might think this is sounding more and more like the job of a CMS, but we must remember that a CMS is loosely based around using templates (Pages, Posts, Galleries, etc) and widgets anyway, and it's the same problem Javascript frameworks and Web Components set out to solve. If you think about it, Web Components have a lot of "content management" opportunity baked in. They literally take the idea of WordPress templates and shortcodes one step further, in a web standards sort of way. Therefore, Web Components will likely spur big changes in the way we think about the CMS. Compare the following:
 
-***Polymer Web Component:***
+&lt;google-map lat="37.790" long="-122.390"&gt;&lt;/google-map&gt; ***(Polymer Web Component)***
 
-&lt;google-map lat="37.790" long="-122.390"&gt;&lt;/google-map&gt;
+[google-map lat="37.790" long="-122.390"] ***(WordPress Shortcode)***
 
-***WordPress Shortcode:***
+&lt;GoogleMap lat="37.790" long="-122.390"/&gt; ***(React Component)***
 
-[google-map lat="37.790" long="-122.390"]
+&lt;google-map lat="37.790" long="-122.390"&gt;&lt;/google-map&gt; ***(Mozilla XBL/XUL)***
 
-***React Component:***
+&lt;GoogleMap lat="37.790" long="-122.390"/&gt; ***(Microsoft XAML)***
 
-&lt;GoogleMap lat="37.790" long="-122.390"/&gt;
+As we can see, templated re-usable components and UI have been a "thing" for quite some time. [Relevant](http://en.wikipedia.org/wiki/User_interface_markup_language).
 
-These *component instances* get mixed in with other HTML to produce a final component or web page. Polymer and React pre-process the component at the client-side, while WordPress pre-processes the shortcode at the server-side. Other than that, it's pretty much *the exact same idea*.
-
-***Bonus - Mozilla XBL/XUL and Microsoft XAML:***
-
-&lt;google-map lat="37.790" long="-122.390"&gt;&lt;/google-map&gt;
-
-&lt;GoogleMap lat="37.790" long="-122.390"/&gt;
-
-As we can see, templated re-usable components and UI have been a "thing" for quite some time; most frameworks take a similar approach. [Relevant](http://en.wikipedia.org/wiki/User_interface_markup_language).
+Regardless of the library, the *component instances* above get mixed in with other HTML to produce a final app or page. Polymer and React pre-process components at the client-side, while WordPress pre-processes shortcodes at the server-side. Other than that, it's pretty much *the exact same idea*.
 
 ### Challenge 2 - CMS
 
