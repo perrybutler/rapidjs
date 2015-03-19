@@ -190,6 +190,12 @@ This challenge is actually what sparked the development of Rapid.js and it incor
 
 You'll notice how lightning fast everything is - switching between categories and sorting hundreds of media items occurs in a fraction of a second. The sort criteria are dyanmically populated based on what is available for that media category.
 
+### Challenge 3 - Port Old Projects
+
+This challenge involves giving new life to some of my old projects by rebuilding them with Rapid.js.
+
+[![Choices & Chances](http://img.youtube.com/vi/dfQ1sOnCvHs/0.jpg)](https://www.youtube.com/watch?v=dfQ1sOnCvHs)
+
 ##OMG, Another Templating Engine?#
 
 Yes.
