@@ -3,7 +3,11 @@ Rapid.js
 
 ![rapid.js](http://glassocean.net/media/rapidjs.jpg)
 
-Write Once, Run Anywhere.
+Write Once, Run Anywhere. Rapid prototyping and live in-page editing without leaving the browser.
+
+Being a huge fan of DevTools and the DOM inspector, I've always wondered how we could better use these tools as part of our development workflow. The ability to select an element from a rendered page, change its properties and then observe the changes immediately is an extremely powerful visual design tool that isn't much different from a robust IDE like Visual Studio, but the problem is that these changes are only temporary. If a developer likes his temporary changes, he can then go paste them into some code files, but that's a bit redundant and it clutters the workflow. What if everything could be done without leaving the browser?
+
+The web has a tremendous amount of technologies out there which aim to bring visual expression, editing and design to the forefront, such as mockup and wireframe tools (Balsamiq, Proto.io), content management systems (WordPress, Squarespace), drag-and-drop page builders (Visual Composer, Beaver Builder), WYSIWYG HTML editors (TinyMCE, Medium, Atom) and WebIDE (Firefox). A system or framework that brings these ideas together into a cohesive workflow for extremely rapid development cycles could revolutionize the way our apps and sites are built.
 
 Rapid.js is a Javascript framework in development for the [Rapid Platform](https://github.com/perrybutler/rapid-platform). Currently, Rapid Platform is provided via a WordPress theme/plugin, but this library will aid in the transition over to a pure Javascript architecture that can be utilized in any solution - not just WordPress - while still providing all of the same benefits as well as opening up the possibility for greater things.
 
