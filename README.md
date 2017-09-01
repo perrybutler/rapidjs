@@ -35,4 +35,8 @@ The HTML elements are up-converted to a fully functional component on page load.
 
 You can also develop your own Rapid Components very easily.
 
+Components currently included:
+
+Expander, Table of Contents, Protocol, Syntax, Grid, Option, Image, Embed, Nav, Block, Cell Calc, Dirlist.
+
 Demo site and more info coming soon.
