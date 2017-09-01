@@ -31,12 +31,10 @@ And then you can start using Rapid Components by tagging elements in your HTML w
 <table data-rapid-cellcalc></table>
 ```
 
-The HTML elements are up-converted to a fully functional component on page load.
+The HTML elements are up-converted to a fully functional component on page load. You can also develop your own Rapid Components very easily. Components currently included:
 
-You can also develop your own Rapid Components very easily.
+*Expander, Table of Contents, Protocol, Syntax, Grid, Option, Image, Embed, Nav, Block, Cell Calc, Dirlist*
 
-Components currently included:
+Demo site:
 
-Expander, Table of Contents, Protocol, Syntax, Grid, Option, Image, Embed, Nav, Block, Cell Calc, Dirlist.
-
-Demo site and more info coming soon.
+http://glassocean.net/lab/rapidjs/index.html
